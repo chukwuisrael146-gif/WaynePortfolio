@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
+
+
+body{
+  margin: 0;
+  background: 
+    radial-gradient(white 1px, transparent 1px),
+    linear-gradient(to bottom, #000000, #0a0a0a);
+  background-size: 30px 30px, 100% 100%;
+  background-color: black;
+  color: white;
+  font-family: "Sora", sans-serif;
+
+
+}
