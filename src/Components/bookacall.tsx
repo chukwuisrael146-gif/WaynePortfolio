@@ -1,3 +1,6 @@
+import SocialLinks from "./sociallinks";
+
+
 export default function BookCall() {
   return (
     <section className="relative flex items-center justify-center min-h-screen text-white overflow-hidden">
@@ -35,29 +38,14 @@ export default function BookCall() {
         </button>
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-4 mt-10 text-gray-300">
-
-          <a href="https://x.com/IsraelChuk17926" className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-white hover:text-black transition">
-            X
-          </a>
-
-          <a href="https://www.instagram.com/israel_chukwu21?utm_source=qr&igsh=MW0xOHk0bmdseGE4dw==" className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-white hover:text-black transition">
-            IG
-          </a>
-
-          <a href="https://wa.me/qr/5SJUJPXUPON3C1" className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-white hover:text-black transition">
-            WA
-          </a>
-
-          <a href="https://www.facebook.com/share/1CajCBSRcu/" className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-white hover:text-black transition">
-            FB
-          </a>
+        <div className="flex justify-center gap-4 text-gray-300">
+          <SocialLinks />
 
         </div>
 
         {/* Footer */}
         <p className="text-xs text-gray-500 mt-6">
-          © Copyright by WordpressRiver
+          © Copyright by Wayne Cooper. All rights reserved.
         </p>
 
       </div>

@@ -7,11 +7,11 @@ export default function Contact() {
   const [budget, setBudget] = useState("");
 
   const budgets = [
-    "< $1,000",
-    "$1,000 - $5,000",
-    "$5,000 - $10,000",
-    "$10,000 - $20,000",
-    "$20,000"
+    "Personal Project",
+    "Mobile App - Escrow",
+    "Buisness website - School MGT",
+    "Birthday Flyer - Buisness Card",
+    "Other"
   ];
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
