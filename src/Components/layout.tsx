@@ -1,6 +1,5 @@
-import React from "react";
 
-export default function Layout({ children }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative min-h-screen w-full bg-black text-white overflow-hidden">
 

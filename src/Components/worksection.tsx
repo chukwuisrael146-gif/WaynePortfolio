@@ -1,5 +1,4 @@
-import React from "react";
-import WorkCard from "./WorkCard";
+import WorkCard from "./workcard";
 
 export default function WorkSection() {
   return (

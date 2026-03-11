@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
     Home,
     FolderGit2,
@@ -28,7 +28,7 @@ export default function RightNav() {
     );
 }
 
-function IconButton({ icon }) {
+function IconButton({ icon }: { icon: React.ReactNode }) {
     return (
         <button className="
       w-10 h-10 flex items-center justify-center 

@@ -1,4 +1,3 @@
-import React from "react";
 import SocialLinks from "../Components/sociallinks";
 import StatsSection from "../Components/staticssection";
 import ExperienceSection from "../Components/experiencesection";

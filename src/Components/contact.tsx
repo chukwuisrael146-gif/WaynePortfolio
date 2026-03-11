@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 export default function Contact() {
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
   const [budget, setBudget] = useState("");
 
   const budgets = [
@@ -14,8 +14,10 @@ export default function Contact() {
     "$20,000"
   ];
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!form.current) return;
 
     emailjs.sendForm(
       "service_yk9kuic",
@@ -25,7 +27,8 @@ export default function Contact() {
     )
     .then(() => {
       alert("Message sent successfully 🚀");
-      form.current.reset();
+      form.current?.reset();
+      setBudget("");
     })
     .catch(() => {
       alert("Failed to send message ❌");
@@ -70,14 +73,12 @@ export default function Contact() {
             <label className="text-sm text-gray-400">Message</label>
             <textarea
               name="message"
-              rows="4"
+              rows={4}
               required
               placeholder="Write your message"
               className="w-full bg-transparent border-b border-gray-600 py-2 focus:outline-none focus:border-white"
             />
           </div>
-
-          {/* Budget Buttons */}
 
           <div className="flex flex-wrap gap-3">
             {budgets.map((item) => (

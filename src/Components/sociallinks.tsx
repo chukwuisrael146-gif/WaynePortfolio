@@ -1,5 +1,4 @@
 // SocialLinks.jsx
-import React from "react";
 import { FaTwitter, FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 
 export default function SocialLinks() {
