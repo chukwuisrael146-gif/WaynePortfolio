@@ -57,22 +57,22 @@ export default function TechStack() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-black flex flex-col items-center justify-center text-white">
+    <section className="min-h-screen bg-black flex flex-col items-center justify-center text-white px-4">
 
-      <h2 className="text-5xl font-semibold mb-16">
+      <h2 className="text-4xl md:text-5xl font-semibold mb-16 text-center">
         Tech Stack
       </h2>
 
       <div
         ref={sliderRef}
-        className="flex gap-10 overflow-hidden w-[900px]"
+        className="flex gap-6 overflow-hidden w-full max-w-[900px]"
       >
         {[...techStack, ...techStack].map((tech, index) => (
           <div
             key={index}
-            className="min-w-[350px] bg-zinc-900/80 backdrop-blur-xl border border-white/10 rounded-3xl p-10 flex flex-col items-center shadow-xl"
+            className="min-w-[260px] sm:min-w-[300px] md:min-w-[350px] bg-zinc-900/80 backdrop-blur-xl border border-white/10 rounded-3xl p-8 flex flex-col items-center shadow-xl"
           >
-            <h3 className="text-xl mb-6">{tech.name}</h3>
+            <h3 className="text-lg md:text-xl mb-6">{tech.name}</h3>
 
             <div className="bg-black p-6 rounded-xl mb-6">
               {tech.icon}
@@ -85,7 +85,7 @@ export default function TechStack() {
         ))}
       </div>
 
-      <div className="w-[900px] h-[3px] bg-white/20 mt-12 rounded">
+      <div className="w-full max-w-[900px] h-[3px] bg-white/20 mt-12 rounded">
         <div className="h-full bg-white w-[30%]"></div>
       </div>
 
