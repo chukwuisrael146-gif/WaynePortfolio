@@ -3,6 +3,7 @@
 
 
 body{
+  overflow-x: hidden;
   margin: 0;
   background: 
     radial-gradient(white 1px, transparent 1px),
