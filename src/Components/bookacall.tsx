@@ -1,4 +1,5 @@
 import SocialLinks from "./sociallinks";
+import Profile from "../assets/profile.png";
 
 
 export default function BookCall() {
@@ -14,7 +15,7 @@ export default function BookCall() {
         <div className="flex justify-center mb-4">
           <div className="w-32 h-32 rounded-full bg-black-600 p-1">
             <img
-              src="\src\assets\profile.png"
+              src={Profile}
               alt="profile"
               className="rounded-full w-full h-full object-cover"
             />
