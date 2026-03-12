@@ -17,9 +17,9 @@ export default function NavBar() {
 
                 {/* Desktop */}
                 <div className="hidden md:flex gap-6 items-center">
-                    <button className="text-sm">Home</button>
-                    <button className="text-sm">Projects</button>
-                    <button className="text-sm">Contact</button>
+                    <a href="#home" className="text-sm" >Home</a>
+                        <a href="#projects" className="text-sm" >Projects</a>
+                        <a href="#contact" className="text-sm" >Contact</a>
                 </div>
 
 
@@ -32,9 +32,9 @@ export default function NavBar() {
                 {/* Mobile Menu */}
                 {open && (
                     <div className="absolute top-full left-0 w-full bg-black/70 backdrop-blur-lg flex flex-col gap-4 py-4 px-6 md:hidden">
-                        <button className="text-sm text-left">Home</button>
-                        <button className="text-sm text-left">Projects</button>
-                        <button className="text-sm text-left">Contact</button>
+                        <a href="#home" className="text-sm text-left" >Home</a>
+                        <a href="#projets" className="text-sm text-left" >Projects</a>
+                        <a href="#contact" className="text-sm text-left" >Contact</a>
                     </div>
                 )}
             </nav>

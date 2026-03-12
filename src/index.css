@@ -19,3 +19,25 @@ body{
 html {
   scroll-behavior: smooth;
 }
+
+/* Mobile optimization */
+@media (max-width: 768px){
+
+  body{
+    /* Smaller grid for small screens */
+    background-size: 20px 20px, 100% 100%;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 1.6rem;
+  }
+
+  p{
+    font-size: 0.9rem;
+  }
+
+}

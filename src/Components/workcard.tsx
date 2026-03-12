@@ -13,7 +13,7 @@ export default function WorkCard({
   category,
   title,
   date,
-  link = "#",
+  link = "https://www.krystaltechhub.com",
 }: WorkCardProps) {
   return (
     <a

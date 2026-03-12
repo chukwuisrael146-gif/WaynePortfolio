@@ -8,6 +8,7 @@ import BookACall from "../Components/bookacall";
 import AboutSection from "../Components/about";
 import Profile from "../assets/profile.png";
 import TechStack from "../Components/techstack";
+import Arrow from "../assets/arrow-black.png";
 
 
 
@@ -41,8 +42,13 @@ export default function LandingPage() {
 
 
                 <div className="flex gap-4 mt-6">
-                    <button className="flex items-center bg-white text-black px-6 py-2 rounded-full cursor-pointer">Start a Project <img className="ml-[10px] w-[16px] " src="src\assets\arrow-black.png" alt="" /></button>
-                    <button className="flex items-center border border-white px-6 py-2 rounded-full cursor-pointer">View my Works</button>
+                    <a href="#contact" className="flex items-center bg-white text-black px-6 py-2 rounded-full cursor-pointer">
+                        Start a Project
+                        <img className="ml-[10px] w-[16px]" src={Arrow} alt="" />
+                    </a>
+                    <a href="#projects" className="flex items-center border border-white px-6 py-2 rounded-full cursor-pointer">
+                        View my Works
+                    </a>
                 </div>
                 <div>
                     <SocialLinks />

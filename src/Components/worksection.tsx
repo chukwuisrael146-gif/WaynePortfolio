@@ -1,4 +1,5 @@
 import WorkCard from "./workcard";
+import Krystal from "../assets/krystal.png";
 
 export default function WorkSection() {
   return (
@@ -16,7 +17,7 @@ export default function WorkSection() {
         />
 
         <WorkCard
-          image="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg"
+          image={Krystal}
           category="Brand Identity"
           title="Modern Branding Suite"
           date="April 2025"
