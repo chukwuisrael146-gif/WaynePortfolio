@@ -33,7 +33,7 @@ export default function NavBar() {
                 {open && (
                     <div className="absolute top-full left-0 w-full bg-black/70 backdrop-blur-lg flex flex-col gap-4 py-4 px-6 md:hidden">
                         <a href="#home" className="text-sm text-left" >Home</a>
-                        <a href="#projets" className="text-sm text-left" >Projects</a>
+                        <a href="#projects" className="text-sm text-left" >Projects</a>
                         <a href="#contact" className="text-sm text-left" >Contact</a>
                     </div>
                 )}
