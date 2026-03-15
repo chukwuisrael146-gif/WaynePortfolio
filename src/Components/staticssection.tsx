@@ -56,7 +56,7 @@ export default function StatsSection() {
 
           <div className="flex flex-col leading-tight">
             <span className="text-yellow-400 text-sm">★★★★★</span>
-            <span className="text-white/70 text-xs">50+ Customer</span>
+            <span className="text-white/70 text-xs">2+ Customer</span>
           </div>
         </div>
 
